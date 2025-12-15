@@ -4,7 +4,7 @@ import DayItinerary from "@/components/DayItinerary";
 import PhotoGallery from "@/components/PhotoGallery";
 
 // Import images
-import onboardImage from "@/assets/Onboard.jpg";
+import onboardImage from "@/assets/Ticket.jpg";
 import citCampusImage from "@/assets/CITCampus.jpg";
 import buffet101Image from "@/assets/Buffet101.jpg";
 import rivanitImage from "@/assets/RIVANIT.jpg";
