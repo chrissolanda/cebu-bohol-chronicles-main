@@ -13,7 +13,7 @@ import breakfastBaiImage from "@/assets/breakfastbai.jpg";
 import mataImage from "@/assets/MATA.jpg";
 import vikingsLogoImage from "@/assets/vikingslogo.jpg";
 import pierImage from "@/assets/pier.jpg";
-import boholArrival3Image from "@/assets/BoholArrival3.jpg";
+import boholArrival3Image from "@/assets/boholarrival3.jpg";
 import vistaSuitesImage from "@/assets/VistaSuites.jpg";
 import skatingImage from "@/assets/Skating.png";
 import stoNinoHopeImage from "@/assets/StoNinoHope.jpg";
