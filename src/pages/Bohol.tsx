@@ -3,30 +3,7 @@ import PageHeader from "@/components/PageHeader";
 import DayItinerary from "@/components/DayItinerary";
 import PhotoGallery from "@/components/PhotoGallery";
 
-// Import images
-import panglaoBreakfastImage from "@/assets/panglaobreakfast.jpg";
-import nine11Image from "@/assets/911.jpg";
-import boholTarsier2Image from "@/assets/BoholTarsier2.jpg";
-import lobocImage from "@/assets/LOBOC.jpg";
-import hillsImage from "@/assets/Hills.jpg";
-import soloMeManMadeForest3Image from "@/assets/SoloMeManMadeForest3.jpg";
-import mirrorImage from "@/assets/Mirror.jpg";
-import panglaoAlonaImage from "@/assets/PanglaoAlona.jpg";
-import boholBangka1Image from "@/assets/BoholBangka1.jpg";
-import tarsierImage from "@/assets/Tarsier.jpg";
-import boholHills3Image from "@/assets/BoholHills3.jpg";
-import hills2Image from "@/assets/Hills2.jpg";
-import alonaImage from "@/assets/Alona.jpg";
-import boholSapaImage from "@/assets/BoholSapa.jpg";
-import birhenHillsImage from "@/assets/BirhenHills.jpg";
-import cruiseImage from "@/assets/Cruise.jpg";
-import lion2Image from "@/assets/Lion2.jpg";
-import towerImage from "@/assets/Tower.jpg";
-import parisImage from "@/assets/Paris.jpg";
-import bridgeImage from "@/assets/Bridge.jpg";
-import baclayonChurchImage from "@/assets/BaclayonChurch.jpg";
-import soloMeChurchImage from "@/assets/SoloMeChurch.jpg";
-import naiaImage from "@/assets/NAIA.jpg";
+
 
 const boholDay1 = {
   day: 1,
@@ -36,19 +13,19 @@ const boholDay1 = {
       time: "6:00 AM",
       title: "Breakfast at Vista Suites Hotel",
       description: "After a restful night, we had breakfast at Vista Suites, starting the day refreshed and ready as we prepared to check out of the hotel and continue our journey.",
-      image: panglaoBreakfastImage,
+      image: "src/assets/panglaobreakfast.jpg",
     },
     {
       time: "8:30 AM",
       title: "T.A.R.S.I.E.R 117 Telephone And Radio Systems Integrated Emergency Response",
       description: "We visited T.A.R.S.I.E.R. 117 (Telephone and Radio Systems Integrated Emergency Response), where we learned about their daily operations and how they respond to emergencies through coordinated communication and rapid action.n ",
-      image: nine11Image,
+      image: "src/assets/911.jpg",
     },
     {
       time: "10:30 AM",
       title: "Tarsier Conservation Area",
       description: "We visited the Tarsier Conservation Area, where we took a guided tour and had the chance to quietly observe the tarsiers in their natural habitat while learning about their protection and conservation.",
-      image: boholTarsier2Image,
+      image: "src/assets/BoholTarsier2.jpg",
     },
     {
       time: "1:00 PM",

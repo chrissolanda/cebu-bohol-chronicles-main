@@ -3,22 +3,7 @@ import PageHeader from "@/components/PageHeader";
 import DayItinerary from "@/components/DayItinerary";
 import PhotoGallery from "@/components/PhotoGallery";
 
-// Import images
-import onboardImage from "@/assets/Ticket.jpg";
-import citCampusImage from "@/assets/CITCampus.jpg";
-import buffet101Image from "@/assets/Buffet101.jpg";
-import rivanitImage from "@/assets/RIVANIT.jpg";
-import mcdoCebuImage from "@/assets/McdoCebu.jpg";
-import breakfastBaiImage from "@/assets/breakfastbai.jpg";
-import mataImage from "@/assets/MATA.jpg";
-import vikingsLogoImage from "@/assets/vikingslogo.jpg";
-import pierImage from "@/assets/pier.jpg";
-import boholArrival3Image from "@/assets/boholarrival3.jpg";
-import vistaSuitesImage from "@/assets/VistaSuites.jpg";
-import skatingImage from "@/assets/Skating.png";
-import stoNinoHopeImage from "@/assets/StoNinoHope.jpg";
-import vikings2Image from "@/assets/vikings2.jpg";
-import ticketImage from "@/assets/Ticket.jpg";
+
 
 const cebuDay1 = {
   day: 1,
@@ -28,7 +13,7 @@ const cebuDay1 = {
       time: "8:45 AM-9:45 AM",
       title: "Departure & Arrival",
       description: "Early morning departure from the meeting point. Travel to Cebu City via plane. Welcome orientation upon arrival.",
-      image: onboardImage,
+      image: "src/assets/Onboard.jpg",
     },
     {
       time: "10:30 AM",
@@ -71,25 +56,25 @@ const cebuDay2 = {
       time: "9:00 AM",
       title: "CIT-U Wildcat Innovation Labs",
       description: "We attended a CodeChum seminar at Cebu Institute of Technology–University (CIT-U), where we learned practical coding concepts and improved our programming skills through guided discussions and activities.",
-      image: citCampusImage,
+      image: "src/assets/CITCampus.jpg",
     },
     {
       time: "11:30 AM",
       title: "Buffet 101",
       description: "After our visit to **CIT-U**, we had lunch at **Buffet 101**, where we enjoyed a wide selection of local and international dishes, making it a relaxing and satisfying way to end the day.",
-      image: buffet101Image,
+      image: "src/assets/Buffet101.jpg",
     },
     {
       time: "2:00 PM",
       title: "Rivan IT Cebu",
       description: "Rivan IT Cebu introduced us to their company and gave a brief discussion about their services, while also teaching us basic networking concepts to help us better understand real-world IT practices.",
-      image: rivanitImage,
+      image: "src/assets/RIVANIT.jpg",
     },
     {
       time: "5:30 PM",
       title: "Dinner at our own choice",
       description: "After returning to the hotel, we went to **McDonald’s near Bai Hotel** to grab a quick and familiar meal, enjoying the relaxed atmosphere as we rested and recharged after a long day of activities.",
-      image: mcdoCebuImage,
+      image: "src/assets/McdoCebu.jpg",
     },
   ],
 };
@@ -102,37 +87,37 @@ const cebuDay3 = {
       time: "6:00 AM",
       title: "Breakfast at Bai Hotel",
       description: "We had breakfast at Bai Hotel, enjoying a variety of dishes that gave us the energy to start our day and prepare for the tour ahead.",
-      image: breakfastBaiImage,
+      image: "src/assets/breakfastbai.jpg",
     },
     {
       time: "10:00 AM",
       title: "Mata Technology Solutions, Inc.",
       description: "Mata Solutions, Inc. introduced us to their company and the services they offer, and they also gave a brief demonstration of their VR technology, allowing us to experience how it is used in their projects.",
-      image: mataImage,
+      image: "src/assets/MATA.jpg",
     },
     {
       time: "12:00 PM",
       title: "Lunch Buffet at Vikings",
       description: "After our tour, we had lunch at Vikings, indulging in a wide variety of delicious dishes and filling up well to prepare for our upcoming trip to Tagbilaran, Bohol.",
-      image: vikingsLogoImage,
+      image: "src/assets/vikingslogo.jpg",
     },
     {
       time: "2:00 PM",
       title: "Proceed to Pier Departure to Tagbilaran, Bohol",
       description: "We **boarded a ferry to Bohol**, enjoying a scenic ride across the sea that lasted for about **two hours** as we traveled to our next destination.",
-      image: pierImage,
+      image: "src/assets/pier.jpg",
     },
     {
       time: "5:00 PM",
       title: "Arrival at Tagbilaran, Bohol",
       description: "We arrived at Tagbilaran, Bohol after a long ferry sail, marking the beginning of another memorable part of our journey.",
-      image: boholArrival3Image,
+      image: "src/assets/boholarrival3.jpg",
     },
     {
       time: "7:00 PM",
       title: "Check in at Vista Suites Hotel then Dinner buffet",
       description: "We arrived at Vista Suites Hotel feeling tired from the day’s travel. After checking in, we enjoyed a warm and satisfying dinner buffet, sharing stories and laughter before finally heading to our rooms to rest and recharge for the next day.",
-      image: vistaSuitesImage,
+      image: "src/assets/VistaSuites.jpg",
     },
   ],
 };
@@ -152,10 +137,10 @@ const photoDump = [
   { src: "https://travelogue-portfolio.vercel.app/assets/codechum-4-SySNqJOZ.jpg", caption: "CIT Campus" },
   { src: "https://travelogue-portfolio.vercel.app/assets/parian-2-C3b__q2Q.jpg", caption: "Heritage of Cebu Momentum" },
   { src: "https://travelogue-portfolio.vercel.app/assets/mata-2-BHDP_MFa.jpg", caption: "MATA Seminar" },
-  { src: skatingImage, caption: "SM Sea Side Cebu" },
-  { src: stoNinoHopeImage, caption: "Sto. Nino Hope of the Pilgrim Church" },
-  { src: vikings2Image, caption: "Foods" },
-  { src: ticketImage, caption: "Our Tickets to Cebu" },
+  { src: "src/assets/Skating.png", caption: "SM Sea Side Cebu" },
+  { src: "src/assets/StoNinoHope.jpg", caption: "Sto. Nino Hope of the Pilgrim Church" },
+  { src: "src/assets/vikings2.jpg", caption: "Foods" },
+  { src: "src/assets/Ticket.jpg", caption: "Our Tickets to Cebu" },
 ];
 
 const Cebu = () => {

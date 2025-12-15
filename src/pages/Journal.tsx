@@ -4,38 +4,29 @@ import Navbar from "@/components/Navbar";
 import PageHeader from "@/components/PageHeader";
 import PhotoGallery from "@/components/PhotoGallery";
 
-// Import images
-import certImage from "@/assets/Cert.jpg";
-import codechumImage from "@/assets/Codechum.png";
-import jFrontImage from "@/assets/JFront.jpg";
-import worldtechImage from "@/assets/worldtech.jpg";
-import codechum1Image from "@/assets/Codechum1.jpg";
-import rivanImage from "@/assets/Rivan.jpg";
-import mataJImage from "@/assets/MataJ.jpg";
-import tarsier117Image from "@/assets/117.jpg";
-import impressionImage from "@/assets/Impression.jpg";
+
 
 const certificates = [
   {
     title: "Certificate of Participation",
     description: "Educational Tour 2025 - Cebu & Bohol",
-    image: certImage,
+    image: "src/assets/Cert.jpg",
   },
   {
     title: "Certificate of Completion",
     description: "Cultural Immersion Program",
-    image: codechumImage,
+    image: "src/assets/Codechum.png",
   },
 ];
 
 const photoDump = [
-  { src: jFrontImage, caption: "Journal" },
-  { src: worldtechImage, caption: "WorldTech Information Solutions, Inc." },
-  { src: codechum1Image, caption: "CodeChum" },
-  { src: rivanImage, caption: "Rivan IT Cebu" },
-  { src: mataJImage, caption: "Mata Technologies, Inc." },
-  { src: tarsier117Image, caption: "T.A.R.S.I.E.R 117" },
-  { src: impressionImage, caption: "Impression Sheet" },
+  { src: "src/assets/JFront.jpg", caption: "Journal" },
+  { src: "src/assets/worldtech.jpg", caption: "WorldTech Information Solutions, Inc." },
+  { src: "src/assets/Codechum1.jpg", caption: "CodeChum" },
+  { src: "src/assets/Rivan.jpg", caption: "Rivan IT Cebu" },
+  { src: "src/assets/MataJ.jpg", caption: "Mata Technologies, Inc." },
+  { src: "src/assets/117.jpg", caption: "T.A.R.S.I.E.R 117" },
+  { src: "src/assets/Impression.jpg", caption: "Impression Sheet" },
 ];
 
 const Journal = () => {
