@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 200 30% 98%;
+    --foreground: 210 40% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 40% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 40% 20%;
+    --primary: 200 80% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 200 40% 90%;
+    --secondary-foreground: 200 80% 30%;
+    --muted: 200 20% 94%;
+    --muted-foreground: 200 20% 45%;
+    --accent: 180 60% 45%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 200 30% 85%;
+    --input: 200 30% 85%;
+    --ring: 200 80% 50%;
+    --radius: 0.75rem;
+    
+    /* Ocean theme custom colors */
+    --ocean-light: 200 70% 95%;
+    --ocean-medium: 200 65% 75%;
+    --ocean-deep: 200 80% 35%;
+    --ocean-wave: 190 70% 60%;
+    --sand: 40 40% 90%;
+    --coral: 15 80% 65%;
+    
+    /* Sidebar */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 210 40% 20%;
+    --sidebar-primary: 200 80% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 200 40% 90%;
+    --sidebar-accent-foreground: 200 80% 30%;
+    --sidebar-border: 200 30% 85%;
+    --sidebar-ring: 200 80% 50%;
+  }
+
+  .dark {
+    --background: 210 40% 10%;
+    --foreground: 200 20% 95%;
+    --card: 210 40% 15%;
+    --card-foreground: 200 20% 95%;
+    --popover: 210 40% 15%;
+    --popover-foreground: 200 20% 95%;
+    --primary: 200 80% 55%;
+    --primary-foreground: 210 40% 10%;
+    --secondary: 200 30% 20%;
+    --secondary-foreground: 200 20% 90%;
+    --muted: 210 30% 20%;
+    --muted-foreground: 200 20% 60%;
+    --accent: 180 60% 50%;
+    --accent-foreground: 210 40% 10%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 210 30% 25%;
+    --input: 210 30% 25%;
+    --ring: 200 80% 55%;
+    
+    /* Ocean theme custom colors - dark mode */
+    --ocean-light: 200 40% 20%;
+    --ocean-medium: 200 50% 35%;
+    --ocean-deep: 200 70% 25%;
+    --ocean-wave: 190 60% 40%;
+    --sand: 40 20% 25%;
+    --coral: 15 60% 50%;
+    
+    /* Sidebar */
+    --sidebar-background: 210 40% 12%;
+    --sidebar-foreground: 200 20% 95%;
+    --sidebar-primary: 200 80% 55%;
+    --sidebar-primary-foreground: 210 40% 10%;
+    --sidebar-accent: 200 30% 20%;
+    --sidebar-accent-foreground: 200 20% 90%;
+    --sidebar-border: 210 30% 25%;
+    --sidebar-ring: 200 80% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+/* Custom utilities */
+@layer utilities {
+  .text-gradient-ocean {
+    @apply bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent;
+  }
+  
+  .bg-ocean-gradient {
+    background: linear-gradient(135deg, hsl(var(--ocean-light)) 0%, hsl(var(--background)) 50%, hsl(var(--ocean-light)) 100%);
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+}

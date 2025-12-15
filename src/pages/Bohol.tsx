@@ -1,0 +1,133 @@
+import Navbar from "@/components/Navbar";
+import PageHeader from "@/components/PageHeader";
+import DayItinerary from "@/components/DayItinerary";
+import PhotoGallery from "@/components/PhotoGallery";
+
+// Import images
+import panglaoBreakfastImage from "@/assets/panglaobreakfast.jpg";
+import nine11Image from "@/assets/911.jpg";
+import boholTarsier2Image from "@/assets/BoholTarsier2.jpg";
+import lobocImage from "@/assets/LOBOC.jpg";
+import hillsImage from "@/assets/Hills.jpg";
+import soloMeManMadeForest3Image from "@/assets/SoloMeManMadeForest3.jpg";
+import mirrorImage from "@/assets/Mirror.jpg";
+import panglaoAlonaImage from "@/assets/PanglaoAlona.jpg";
+import boholBangka1Image from "@/assets/BoholBangka1.jpg";
+import tarsierImage from "@/assets/Tarsier.jpg";
+import boholHills3Image from "@/assets/BoholHills3.jpg";
+import hills2Image from "@/assets/Hills2.jpg";
+import alonaImage from "@/assets/Alona.jpg";
+import boholSapaImage from "@/assets/BoholSapa.jpg";
+import birhenHillsImage from "@/assets/BirhenHills.jpg";
+import cruiseImage from "@/assets/Cruise.jpg";
+import lion2Image from "@/assets/Lion2.jpg";
+import towerImage from "@/assets/Tower.jpg";
+import parisImage from "@/assets/Paris.jpg";
+import bridgeImage from "@/assets/Bridge.jpg";
+import baclayonChurchImage from "@/assets/BaclayonChurch.jpg";
+import soloMeChurchImage from "@/assets/SoloMeChurch.jpg";
+import naiaImage from "@/assets/NAIA.jpg";
+
+const boholDay1 = {
+  day: 1,
+  date: "Day 1 - Bohol Countryside Tour",
+  activities: [
+    {
+      time: "6:00 AM",
+      title: "Breakfast at Vista Suites Hotel",
+      description: "After a restful night, we had breakfast at Vista Suites, starting the day refreshed and ready as we prepared to check out of the hotel and continue our journey.",
+      image: panglaoBreakfastImage,
+    },
+    {
+      time: "8:30 AM",
+      title: "T.A.R.S.I.E.R 117 Telephone And Radio Systems Integrated Emergency Response",
+      description: "We visited T.A.R.S.I.E.R. 117 (Telephone and Radio Systems Integrated Emergency Response), where we learned about their daily operations and how they respond to emergencies through coordinated communication and rapid action.n ",
+      image: nine11Image,
+    },
+    {
+      time: "10:30 AM",
+      title: "Tarsier Conservation Area",
+      description: "We visited the Tarsier Conservation Area, where we took a guided tour and had the chance to quietly observe the tarsiers in their natural habitat while learning about their protection and conservation.",
+      image: boholTarsier2Image,
+    },
+    {
+      time: "1:00 PM",
+      title: "Lunch Fiesta Buffet at Floating Restaurant while cruising Loboc River",
+      description: "We enjoyed a Lunch Fiesta Buffet at a floating restaurant while cruising along the Loboc River. Surrounded by music, dancing, and laughter, we sang along and had an unforgettable time filled with joy and fun.",
+      image: lobocImage,
+    },
+    {
+      time: "3:30 PM",
+      title: "Chocolate Hills Bohol",
+      description: "We visited the Chocolate Hills viewing area, where we admired the breathtaking landscape of rolling hills and took time to appreciate one of Bohol’s most iconic natural wonders.",
+      image: hillsImage,
+    },
+    {
+      time: "5:00 PM",
+      title: "Man-Made Forest",
+      description: "We passed through the Man-Made Forest, surrounded by towering mahogany trees that created a cool and peaceful atmosphere, making the journey feel calm and refreshing.",
+      image: soloMeManMadeForest3Image,
+    },
+    {
+      time: "5:00 PM",
+      title: "Mirror of the World",
+      description: "We visited the Mirror of the World, where famous landmarks from different countries were beautifully recreated, giving us a glimpse of global cultures in one unique and memorable place.",
+      image: mirrorImage,
+    },
+  ],
+};
+
+
+
+const photoDump = [
+  { src: panglaoAlonaImage, caption: "Alona Beach" },
+  { src: boholBangka1Image, caption: "With our Proctor and friends" },
+  { src: tarsierImage, caption: "Tarsier Encounter" },
+  { src: boholHills3Image, caption: "Up the Hills with friends" },
+  { src: hills2Image, caption: "Chocolate Hills" },
+  { src: alonaImage, caption: "Beach with Friends" },
+  { src: boholSapaImage, caption: "Loboc River" },
+  { src: birhenHillsImage, caption: "Birhen Maria" },
+  { src: cruiseImage, caption: "Cruise" },
+  { src: lion2Image, caption: "High up in Mirror of the World" },
+  { src: towerImage, caption: "Leaning tower of Pisa" },
+  { src: parisImage, caption: "Eiffel Tower" },
+  { src: bridgeImage, caption: "London Bridge" },
+  { src: "https://travelogue-portfolio.vercel.app/assets/baclayon-3-yLkMWgnJ.jpg", caption: "Baclayon Church with Friends" },
+  { src: soloMeChurchImage, caption: "Solo me in Baclayon Church" },
+  { src: naiaImage, caption: "NAIA with friends" },
+];
+
+const Bohol = () => {
+  return (
+    <div className="min-h-screen bg-background">
+      <Navbar />
+      <PageHeader
+        title="Bohol"
+        subtitle="1 Days of Natural Wonders"
+        backgroundImage="data:image/jpeg;base64,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"
+      />
+
+      <main className="container mx-auto px-4 py-12">
+        <section className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-serif font-bold text-foreground mb-8">Itinerary</h2>
+          <DayItinerary {...boholDay1} />
+        </section>
+
+        <section className="max-w-6xl mx-auto">
+          <PhotoGallery title="Photo Dump 📸" photos={photoDump} />
+        </section>
+      </main>
+
+      <footer className="py-8 border-t border-border bg-card/50">
+        <div className="container mx-auto px-4 text-center">
+          <p className="text-sm text-muted-foreground">
+            Educational Trip Portfolio • Cebu & Bohol 2025
+          </p>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default Bohol;
